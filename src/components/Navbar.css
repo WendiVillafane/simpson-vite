@@ -1,0 +1,170 @@
+.active{
+    background-color: #f0e4fc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d194fc;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav .title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+   list-style: none; 
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    background-color:#e0abff ;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
+    .nav-story {
+        padding: 10px;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 2rem;
+        background-color: #ece0fa;
+        
+  }
+  .image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+  }
+  
+  .image img:last-child {
+    margin-bottom: 0;
+  }
+  
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en varias líneas */
+    gap: 20px; /* Espacio entre las imágenes */
+  }
+  
+  .gallery-item {
+    width: calc(50% - 10px); /* Calcula el ancho de cada imagen (50% del contenedor menos el espacio entre las imágenes) */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    gap: 10px;
+    margin-top: 25px;
+
+  }
+  .card-content {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d194fc;
+    text-align: center;
+    
+  }
+  
+  .homero{
+    width: 300px;
+  }
+
+  .image-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  
+  .image img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+  }
+  
+  .image img:last-child {
+    margin-bottom: 0;
+  }
